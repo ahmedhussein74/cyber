@@ -1,0 +1,17 @@
+* {
+  font-family: "Rubik", sans-serif;
+}
+
+.active {
+  color: #000;
+}
+
+/* For WebKit-based browsers (Chrome, Safari, Edge) */
+.scroll-hidden::-webkit-scrollbar {
+  display: none; /* Completely hide the scrollbar */
+}
+
+/* For Firefox */
+.scroll-hidden {
+  scrollbar-width: none; /* Hide the scrollbar without disabling scrolling */
+}
