@@ -34,7 +34,7 @@ const Categories = () => {
   ];
 
   return (
-    <section className="px-[5%] py-12 lg:py-20">
+    <section className="px-[5%] py-12 lg:py-20 bg-[#FAFAFA]">
       <h2 className="text-lg lg:text-2xl font-bold">Browse By Category</h2>
       <div className="scroll-hidden overflow-x-auto pt-5">
         <div className="flex justify-between gap-8 w-max">

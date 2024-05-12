@@ -36,6 +36,9 @@ const Discounts = () => {
             key={index}
             className="flex flex-col justify-between items-center gap-4 px-3 py-5 rounded bg-[#F6F6F6]"
           >
+            <p className="w-full text-end text-xl">
+              <i className="fa-regular fa-heart text-[#909090]"></i>
+            </p>
             <img src={e.img} className="h-52" />
             <h2 className="text-center font-bold text-xl">{e.name}</h2>
             <span className="text-lg">{e.price} $</span>
