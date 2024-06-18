@@ -15,3 +15,7 @@
 .scroll-hidden {
   scrollbar-width: none; /* Hide the scrollbar without disabling scrolling */
 }
+
+.top{
+  background: url(../images/Banner2.png);
+}

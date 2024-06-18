@@ -1,36 +1,59 @@
-import watch from "../../images/appleWatch.png";
-import headphone from "../../images/headphone.svg";
-import iphoneGold from "../../images/iphone14gold.png";
-import iphoneSilver from "../../images/iphone14silver.png";
+import sell1 from "../../images/sell1.png";
+import sell2 from "../../images/sell2.png";
+import sell3 from "../../images/sell3.png";
+import sell4 from "../../images/sell4.png";
+import sell5 from "../../images/sell5.png";
+import sell6 from "../../images/sell6.png";
+import sell7 from "../../images/sell7.png";
+import sell8 from "../../images/sell8.png";
 
-const Discounts = () => {
+const BestSaller = () => {
   const offers = [
     {
       name: "Apple iPhone 14 Pro Max 128GB Deep Purple (MQ9T3RX/A)",
       price: 1437,
-      img: iphoneGold,
+      img: sell1,
     },
     {
       name: "Airpods Max Silver",
       price: 549,
-      img: headphone,
+      img: sell2,
     },
     {
       name: "Apple Watch Series 9 GPS 41mm Starlight Aluminium Case",
       price: 399,
-      img: watch,
+      img: sell3,
     },
     {
       name: "Apple iPhone 14 Pro 1TB Gold (MQ2V3)",
       price: 1499,
-      img: iphoneSilver,
+      img: sell4,
+    },
+    {
+      name: "Apple iPhone 14 Pro Max 128GB Deep Purple (MQ9T3RX/A)",
+      price: 1437,
+      img: sell5,
+    },
+    {
+      name: "Airpods Max Silver",
+      price: 549,
+      img: sell6,
+    },
+    {
+      name: "Apple Watch Series 9 GPS 41mm Starlight Aluminium Case",
+      price: 399,
+      img: sell7,
+    },
+    {
+      name: "Apple iPhone 14 Pro 1TB Gold (MQ2V3)",
+      price: 1499,
+      img: sell8,
     },
   ];
-
   return (
     <section className="px-[5%] py-12 lg:py-20">
-      <h2 className="text-lg lg:text-2xl font-bold">Discounts up to -50%</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
+      <h2 className="text-lg lg:text-2xl font-bold">Best seller</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-8">
         {offers.map((e, index) => (
           <div
             key={index}
@@ -52,4 +75,4 @@ const Discounts = () => {
   );
 };
 
-export default Discounts;
+export default BestSaller;
