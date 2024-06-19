@@ -2,10 +2,6 @@
   font-family: "Rubik", sans-serif;
 }
 
-.active {
-  color: #000;
-}
-
 /* For WebKit-based browsers (Chrome, Safari, Edge) */
 .scroll-hidden::-webkit-scrollbar {
   display: none; /* Completely hide the scrollbar */
@@ -16,6 +12,6 @@
   scrollbar-width: none; /* Hide the scrollbar without disabling scrolling */
 }
 
-.top{
+.top {
   background: url(../images/Banner2.png);
 }

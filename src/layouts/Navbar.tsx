@@ -1,12 +1,12 @@
 import toggleNavbar from "../hooks/toggleNavbar";
-import { NavLink, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const routes = [
     { url: "/", value: "Home" },
-    { url: "/about", value: "About" },
-    { url: "/contact", value: "Contact" },
-    { url: "/blog", value: "Blog" },
+    { url: "/", value: "About" },
+    { url: "/", value: "Contact" },
+    { url: "/", value: "Blog" },
   ];
 
   return (
@@ -30,13 +30,13 @@ const Navbar = () => {
       </div>
       <aside className="w-full lg:w-fit lg:h-16 grow px-[5%] lg:px-0 flex flex-wrap justify-center lg:gap-12">
         {routes.map((e, index) => (
-          <NavLink
+          <Link
             key={index}
             to={e.url}
-            className="w-full lg:w-fit h-16 capitalize flex items-center font-bold text-[#989898]"
+            className="w-full lg:w-fit h-16 capitalize flex items-center font-bold text-[#989898] hover:text-black"
           >
             {e.value}
-          </NavLink>
+          </Link>
         ))}
       </aside>
       <div className="h-16 px-[5%] lg:px-0 flex items-center gap-6">
