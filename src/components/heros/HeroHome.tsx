@@ -1,19 +1,33 @@
-import iphone from "../../images/iphone.svg";
+import { data } from "../../api/home";
+import "swiper/css";
+import "swiper/css/scrollbar";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import HeroSlide from "../sliders/HeroSlide";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, A11y, Autoplay } from "swiper/modules";
 
 const HeroHome = () => {
   return (
-    <section className="h-[calc(100vh-64px)] px-[5%] py-4 bg-[#211C24] grid grid-cols-1 md:grid-cols-2 justify-between items-center gap-8 overflow-hidden">
-      <div className="text-white flex flex-col gap-3">
-        <p>Pro.Beyond.</p>
-        <h1 className="text-4xl lg:text-8xl">
-          Iphone 14 <span className="font-bold">Pro</span>
-        </h1>
-        <p>Created to change everything to the better for evryone</p>
-        <button className="w-48 h-14 bg-transparent border border-white text-white rounded-lg hover:text-[#211C24] hover:bg-white">
-          Shop Now
-        </button>
-      </div>
-      <img src={iphone} className="text-center" />
+    <section className="h-[calc(100vh-64px)] px-[5%] bg-[#211C24] flex items-center">
+      <Swiper
+        navigation
+        slidesPerView={1}
+        autoplay
+        loop
+        pagination={{ clickable: true }}
+        modules={[Navigation, Pagination, A11y, Autoplay]}
+      >
+        {data.map((e, index) => (
+          <SwiperSlide key={index}>
+            <HeroSlide
+              image={e.image}
+              title={e.title}
+              description={e.description}
+            />
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </section>
   );
 };
