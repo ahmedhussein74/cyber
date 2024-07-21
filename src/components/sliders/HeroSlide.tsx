@@ -6,7 +6,7 @@ interface SlideProps {
 
 const HeroSlide: React.FC<SlideProps> = ({ title, description, image }) => {
   return (
-    <div className="flex flex-col-reverse lg:flex-row justify-center items-center gap-8 lg:justify-around">
+    <div className="h-[calc(100vh-64px)] flex flex-col-reverse lg:flex-row justify-center items-center gap-8 lg:justify-around">
       <div className="text-white flex items-center lg:items-start flex-col gap-3 lg:max-w-[500px]">
         <h1 className="font-bold text-4xl lg:text-7xl">{title}</h1>
         <p className="text-center lg:text-start">{description}</p>
